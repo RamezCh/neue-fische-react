@@ -1,10 +1,13 @@
-export default function List() {
+type ContentProps = {
+    title:string
+    advantages:string[]
+}
+
+export default function List(props: ContentProps) {
     return <>
-        <h3>Reasons to Admire the Moon</h3>
+        <h3>{props.title}</h3>
         <ul>
-            <li>It influences the tides.</li>
-            <li>It has inspired countless myths and legends.</li>
-            <li>It provides a guiding light in the night sky.</li>
+            {props.advantages.map((sentence) => <li>{sentence}</li>)}
         </ul>
     </>
 }
