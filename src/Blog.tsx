@@ -11,7 +11,14 @@ const moonAdv = {
 
 export default function Blog() {
     return <>
-        <Hero/>
+        <Hero title="Welcome to the Sky and Moon Blog"
+        subtitle="Exploring the beauty of the night sky and the mysteries of the moon."
+        secondTitle="The Enchanting Moon"
+        imgSrc="https://media.istockphoto.com/id/1465441739/photo/romantic-night-scene.jpg?s=612x612&w=0&k=20&c=gt2thGqqfyvlEd4BkvFfG7ca8Jq_rUeFZhTg_bOh6cU="
+        imgAlt="Beautiful Moon"
+        text="The moon has fascinated humanity for centuries. Its phases, its glow, and its presence in the night sky
+        create a sense of wonder."
+        />
         <List {...moonAdv} />
         <MoreInfo/>
         <LeaveAReview/>
