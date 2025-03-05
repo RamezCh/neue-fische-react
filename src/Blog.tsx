@@ -5,10 +5,10 @@ import MoreInfo from "./MoreInfo.tsx";
 import LeaveAReview from "./LeaveAReview.tsx";
 
 export default function Blog() {
-    return <div className={"container"}>
+    return <>
         <Hero/>
         <List/>
         <MoreInfo/>
         <LeaveAReview/>
-    </div>
+    </>
 }
