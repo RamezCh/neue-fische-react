@@ -1,6 +1,13 @@
-export default function MoreInfo() {
+type ContentType = {
+    text:string
+    visitLink:string
+    aText:string
+    quote:string
+}
+
+export default function MoreInfo(props:ContentType) {
     return <>
-        <p>For more stunning images of the moon and sky, visit <a href="https://www.nasa.gov/" target="_blank">NASA</a>.</p>
-        <blockquote>“The moon is a friend for the lonesome to talk to.” – Carl Sandburg</blockquote>
+        <p>{props.text} <a href={props.visitLink} target="_blank">{props.aText}</a>.</p>
+        <blockquote>{props.quote}</blockquote>
     </>
 }

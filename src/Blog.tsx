@@ -9,6 +9,14 @@ const moonAdv = {
     advantages: ["It influences the tides.", "It has inspired countless myths and legends.", "It provides a guiding light in the night sky."]
 }
 
+const moreInfo = {
+    text: "For more stunning images of the moon and sky, visit",
+    visitLink: "https://www.nasa.gov/",
+    aText: "nasa",
+    quote: "“The moon is a friend for the lonesome to talk to.” – Carl Sandburg"
+
+}
+
 export default function Blog() {
     return <>
         <Hero title="Welcome to the Sky and Moon Blog"
@@ -20,7 +28,7 @@ export default function Blog() {
         create a sense of wonder."
         />
         <List {...moonAdv} />
-        <MoreInfo/>
+        <MoreInfo {...moreInfo}/>
         <LeaveAReview/>
     </>
 }
